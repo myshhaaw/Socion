@@ -221,3 +221,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Generated forecasting model artifacts
+artifacts/forecasting/*.joblib
