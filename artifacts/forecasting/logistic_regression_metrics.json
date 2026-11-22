@@ -1,16 +1,16 @@
 {
     "model": "Logistic Regression",
-    "validation_pr_auc": 0.9882435207972577,
-    "validation_precision": 0.9178082191780822,
-    "validation_recall": 0.9571428571428572,
-    "validation_f1": 0.9370629370629371,
-    "validation_brier_score": 0.07223263934371223,
-    "validation_positive_rate": 0.7777777777777778,
+    "validation_pr_auc": 0.9870959440037568,
+    "validation_precision": 0.9273670557717251,
+    "validation_recall": 0.9675236806495264,
+    "validation_f1": 0.9470198675496688,
+    "validation_brier_score": 0.06537812332856194,
+    "validation_positive_rate": 0.8050108932461874,
     "threshold": 0.5,
     "confusion_matrix": {
-        "true_negative": 14,
-        "false_positive": 6,
-        "false_negative": 3,
-        "true_positive": 67
+        "true_negative": 246,
+        "false_positive": 112,
+        "false_negative": 48,
+        "true_positive": 1430
     }
 }

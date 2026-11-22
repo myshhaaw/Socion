@@ -6,7 +6,7 @@ import joblib
 import numpy as np
 
 from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (
@@ -52,11 +52,10 @@ def train_model():
 
     X_val = data["X_val"]
     y_val = data["y_val"]
-
     # Preprocess numerical and categorical features
     preprocessor = ColumnTransformer(
         transformers=[
-            ("num", "passthrough", NUMERIC_FEATURES),
+            ("num", StandardScaler(), NUMERIC_FEATURES),
             (
                 "cat",
                 OneHotEncoder(handle_unknown="ignore"),
@@ -64,6 +63,7 @@ def train_model():
             ),
         ]
     )
+
 
     # Logistic Regression pipeline
     model = Pipeline(

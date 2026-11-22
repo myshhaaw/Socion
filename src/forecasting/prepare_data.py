@@ -4,7 +4,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
 
-DATA_PATH = ROOT / "data" / "processed" / "forecasting_dataset_sample.csv"
+DATA_PATH = ROOT / "data" / "processed" / "forecasting_dataset.csv"
 
 FEATURES = [
     "acled_1w",
