@@ -3,9 +3,10 @@ import pandas as pd
 from src.config import RAW, START_DATE, END_DATE, ACLED_QUALIFYING, COUNTRY
 from src.data.preprocess import norm_state, save_interim, OFFICIAL_STATES
 
+
 def load_acled(path=None):
-    path = path or sorted((RAW / "ACLED").glob("*.csv"))[0]
-    df = pd.read_csv(path, low_memory=False)
+    path = path or RAW / "acled_raw.xlsx"
+    df = pd.read_excel(path)
     df = df[df["COUNTRY"].astype(str).str.strip().str.lower().eq(COUNTRY.lower())].copy()
 
     out = pd.DataFrame({

@@ -22,7 +22,7 @@ def categorize(code):
     return "protest"
 
 def load_gdelt(path=None):
-    path = path or sorted((RAW / "GDELT").glob("*.csv"))[0]
+    path = path or RAW / "gdelt_raw.csv"
     df = pd.read_csv(path, dtype={"EventCode": str, "EventRootCode": str}, low_memory=False)
     df = df[(df["ActionGeo_CountryCode"] == "IN") & (df["EventRootCode"] == "14")].copy()
     geo = df["ActionGeo_FullName"].map(parse_place)
