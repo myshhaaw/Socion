@@ -1,0 +1,14 @@
+stages:
+  region_weekly:
+    cmd: python src/data/build_region_weekly.py
+    deps: [src/data/build_region_weekly.py, src/data/config.py, data/raw/acled_asia_pacific_weekly.xlsx]
+    outs: [data/processed/region_weekly.csv]
+  synthetic:
+    cmd: python src/data/prepare_synthetic.py
+    deps: [src/data/prepare_synthetic.py, data/raw/synthetic_civil_unrest_news.csv]
+    outs: [data/processed/articles_synthetic.csv]
+  gdelt_sample:
+    cmd: python src/data/prepare_gdelt_sample.py
+    deps: [src/data/prepare_gdelt_sample.py, data/raw/gdelt_india_protest_2018_2023.csv, data/processed/region_weekly.csv]
+    outs: [data/interim/gdelt_urls_sample.csv]
+# scraping + labelling are not reproducible stages (network + humans): track their outputs with `dvc add`
