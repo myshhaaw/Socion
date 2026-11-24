@@ -1,0 +1,5 @@
+outs:
+- md5: 3b818df473e5c4aeee1c954fc1377166
+  size: 63155511
+  hash: md5
+  path: gdelt_india_protest_2018_2023.csv

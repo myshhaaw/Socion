@@ -1,0 +1,5 @@
+outs:
+- md5: 2cc5f3d6f0ab2967d92857e9dc1c5472
+  size: 435713
+  hash: md5
+  path: synthetic_civil_unrest_news.csv
