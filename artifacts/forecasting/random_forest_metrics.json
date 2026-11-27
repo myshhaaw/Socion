@@ -1,0 +1,16 @@
+{
+    "model": "Random Forest",
+    "validation_pr_auc": 0.9882060319298165,
+    "validation_precision": 0.9737856592135697,
+    "validation_recall": 0.854533152909337,
+    "validation_f1": 0.9102702702702703,
+    "validation_brier_score": 0.08846231914607916,
+    "validation_positive_rate": 0.8050108932461874,
+    "threshold": 0.5,
+    "confusion_matrix": {
+        "true_negative": 324,
+        "false_positive": 34,
+        "false_negative": 215,
+        "true_positive": 1263
+    }
+}

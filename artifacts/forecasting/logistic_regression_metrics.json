@@ -1,0 +1,16 @@
+{
+    "model": "Logistic Regression",
+    "validation_pr_auc": 0.9870959440037568,
+    "validation_precision": 0.9273670557717251,
+    "validation_recall": 0.9675236806495264,
+    "validation_f1": 0.9470198675496688,
+    "validation_brier_score": 0.06537812332856194,
+    "validation_positive_rate": 0.8050108932461874,
+    "threshold": 0.5,
+    "confusion_matrix": {
+        "true_negative": 246,
+        "false_positive": 112,
+        "false_negative": 48,
+        "true_positive": 1430
+    }
+}

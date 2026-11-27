@@ -221,3 +221,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Generated forecasting model artifacts
+artifacts/forecasting/*.joblib
+!artifacts/forecasting/logistic_regression.joblib
+!artifacts/forecasting/random_forest.joblib
+# Raw SOCION datasets (keep locally, do not upload)
+data/raw/*.xlsx
+data/raw/*.csv
+# Generated forecasting model artifacts
+artifacts/forecasting/*.joblib
+!artifacts/forecasting/logistic_regression.joblib
+!artifacts/forecasting/random_forest.joblib
+
+# Raw SOCION datasets (keep locally, do not upload)
+data/raw/*.xlsx
+data/raw/*.csv
