@@ -1,0 +1,25 @@
+{
+  "event_mention": {
+    "not_event_report": 0,
+    "event_report": 1
+  },
+  "event_type": {
+    "blockade": 0,
+    "march": 1,
+    "none": 2,
+    "protest": 3,
+    "riot": 4,
+    "strike": 5
+  },
+  "event_status": {
+    "none": 0,
+    "ongoing": 1,
+    "past": 2,
+    "planned": 3
+  },
+  "bio": {
+    "O": 0,
+    "B-TRIG": 1,
+    "I-TRIG": 2
+  }
+}
