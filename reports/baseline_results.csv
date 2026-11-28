@@ -1,0 +1,17 @@
+task,model,split,accuracy,macro_precision,macro_recall,macro_f1
+event_vs_not,keyword_rules,val,0.716,0.674,0.635,0.642
+event_type,keyword_rules,val,0.716,0.748,0.787,0.734
+event_vs_not,keyword_rules,test,0.789,0.728,0.714,0.72
+event_type,keyword_rules,test,0.789,0.821,0.798,0.79
+event_vs_not,tfidf_lr,val,1.0,1.0,1.0,1.0
+event_vs_not,tfidf_lr,test,1.0,1.0,1.0,1.0
+event_vs_not,tfidf_lr_with_hashtags,val,1.0,1.0,1.0,1.0
+event_vs_not,tfidf_lr_with_hashtags,test,1.0,1.0,1.0,1.0
+event_type,tfidf_lr,val,0.974,0.953,0.975,0.962
+event_type,tfidf_lr,test,0.988,0.981,0.985,0.982
+event_type,tfidf_lr_with_hashtags,val,0.978,0.967,0.978,0.971
+event_type,tfidf_lr_with_hashtags,test,0.988,0.981,0.985,0.982
+event_status,tfidf_lr,val,1.0,1.0,1.0,1.0
+event_status,tfidf_lr,test,0.98,0.985,0.972,0.978
+event_status,tfidf_lr_with_hashtags,val,1.0,1.0,1.0,1.0
+event_status,tfidf_lr_with_hashtags,test,0.98,0.987,0.972,0.979
