@@ -102,6 +102,18 @@ def create_sequences(X, y, sequence_length):
 
         for i in range(sequence_length - 1, len(state_X)):
 
+            window_indices = state_indices[
+                i - sequence_length + 1:i + 1
+            ]
+
+            window_weeks = pd.to_datetime(
+                X.iloc[window_indices]["week"]
+            )
+
+            # Ensure all observations are consecutive weekly records.
+            if not (window_weeks.diff().dropna().dt.days == 7).all():
+                continue
+
             sequences.append(
                 state_X[i - sequence_length + 1:i + 1]
             )

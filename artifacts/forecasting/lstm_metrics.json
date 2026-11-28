@@ -1,0 +1,10 @@
+{
+    "model": "LSTM",
+    "validation_pr_auc": 0.9895559263304483,
+    "validation_precision": 0.9467905405405406,
+    "validation_recall": 0.9508057675996607,
+    "validation_f1": 0.9487939060516293,
+    "validation_brier_score": 0.06403325498104095,
+    "validation_samples": 1440,
+    "threshold": 0.5
+}

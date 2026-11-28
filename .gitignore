@@ -237,3 +237,5 @@ artifacts/forecasting/*.joblib
 # Raw SOCION datasets (keep locally, do not upload)
 data/raw/*.xlsx
 data/raw/*.csv
+!artifacts/forecasting/gru_scaler.joblib
+!artifacts/forecasting/lstm_scaler.joblib

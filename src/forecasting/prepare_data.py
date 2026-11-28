@@ -36,7 +36,7 @@ def prepare_data():
     if df["target"].isna().any():
         raise ValueError("Missing target values found")
 
-    X = df[FEATURES].copy()
+    X = df[FEATURES + ["week"]].copy()
     y = df["target"].astype(int)
 
     train = df["split"] == "train"

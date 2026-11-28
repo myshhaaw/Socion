@@ -1,0 +1,10 @@
+{
+    "model": "GRU",
+    "validation_pr_auc": 0.9897988384586338,
+    "validation_precision": 0.9382716049382716,
+    "validation_recall": 0.9669211195928753,
+    "validation_f1": 0.9523809523809523,
+    "validation_brier_score": 0.060737017542123795,
+    "validation_samples": 1440,
+    "threshold": 0.5
+}
